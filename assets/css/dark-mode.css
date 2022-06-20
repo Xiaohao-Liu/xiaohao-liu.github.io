@@ -1,0 +1,33 @@
+.dark-mode { background: #333; color: white; }
+
+.dark-mode .img-board .img { border: 1px solid #444; }
+
+.dark-mode .img-board:hover .cover { opacity: 0; }
+
+.dark-mode .profile { background-color: #444; }
+
+.dark-mode .profile .img-board { width: 150px; height: 150px; margin: 20px auto; }
+
+.dark-mode .profile .img-board .cover { opacity: 0; }
+
+.dark-mode .profile .img-board * { border-radius: 10px; opacity: 1; border: none; }
+
+.dark-mode .profile .dot::before { content: ""; background: white; }
+
+.dark-mode .profile .line::before { content: ""; background: #666; }
+
+.dark-mode ul { list-style: none; }
+
+.dark-mode li { background-color: #444; }
+
+.dark-mode .education li .duration { color: #888; }
+
+.dark-mode .education li .remark-b { background-color: #666; color: #AAA; }
+
+.dark-mode .paper .remark { color: #888; }
+
+.dark-mode .tolight { display: block; }
+
+.dark-mode .todark { display: none; }
+
+/*# sourceMappingURL=dark-mode.css.map */

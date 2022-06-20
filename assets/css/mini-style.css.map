@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "mini-style.css",
+	"sources": [
+		"mini-style.scss"
+	],
+	"sourcesContent": [
+		"@media screen and (max-width: 600px) { /*当屏幕尺寸小于600px时，应用下面的CSS样式*/\n    .wrapper{\n        padding:10px 10px;\n    }\n    .fixed-top{\n        width: 100%;\n        position: relative;\n        top: 0;\n        right: 0px;\n    }\n    .row{\n        display: block !important;\n        padding: 0px 5px;\n        box-sizing: border-box;\n    }\n    .col{\n        display: block !important;\n        width: 100% !important;\n    }\n    .education li{\n        float: none;\n        padding: 5px;\n        width: 100%;\n    }\n}"
+	],
+	"names": [],
+	"mappings": ";AAAA,MAAM,8BAAiC,GAAA,4CAA4C,CAC/E,AAAA,QAAQ,CAAA,EACJ,OAAO,EAAC,SAAS,GACpB,CACD,AAAA,UAAU,CAAA,EACN,KAAK,EAAE,IAAI,EACX,QAAQ,EAAE,QAAQ,EAClB,GAAG,EAAE,CAAC,EACN,KAAK,EAAE,GAAG,GACb,CACD,AAAA,IAAI,CAAA,EACA,OAAO,EAAE,gBAAgB,EACzB,OAAO,EAAE,OAAO,EAChB,UAAU,EAAE,UAAU,GACzB,CACD,AAAA,IAAI,CAAA,EACA,OAAO,EAAE,gBAAgB,EACzB,KAAK,EAAE,eAAe,GACzB,CACD,AAAA,UAAU,CAAC,EAAE,CAAA,EACT,KAAK,EAAE,IAAI,EACX,OAAO,EAAE,GAAG,EACZ,KAAK,EAAE,IAAI,GACd,EAvB8E"
+}
