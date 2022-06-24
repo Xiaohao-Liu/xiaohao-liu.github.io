@@ -1,4 +1,4 @@
 @charset "UTF-8";
-@media screen and (max-width: 600px) { /*当屏幕尺寸小于600px时，应用下面的CSS样式*/ .wrapper { padding: 10px 10px; } .fixed-top { width: 100%; position: relative; top: 0; right: 0px; } .row { display: block !important; padding: 0px 5px; box-sizing: border-box; } .col { display: block !important; width: 100% !important; } .education li { float: none; padding: 5px; width: 100%; } }
+@media screen and (max-width: 620px) { /*当屏幕尺寸小于620px时，应用下面的CSS样式*/ .wrapper { padding: 10px 10px; } .fixed-top { width: 100%; position: relative; top: 0; right: 0px; } .row { display: block !important; padding: 0px 5px; box-sizing: border-box; } .col { display: block !important; width: 100% !important; } .education li { float: none; padding: 5px; width: 100%; } }
 
 /*# sourceMappingURL=mini-style.css.map */

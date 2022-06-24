@@ -68,7 +68,9 @@ span.highlight { color: #ef5350; }
 
 .profile .line::before { content: ""; height: 1px; width: 100%; margin: 1px; position: absolute; top: 0px; left: 0px; background: #ddd; }
 
-.profile .email, .profile .github { display: contents; }
+.profile .email, .profile .github { font-size: 14px; line-height: 24px; display: contents; }
+
+.profile .email .logo, .profile .github .logo { height: 20px; width: 20px; margin: 2px; }
 
 .logo { height: 24px; width: 24px; background-size: cover; background-position: center; background-repeat: no-repeat; display: block; margin: auto; background-color: #EEE; border-radius: 5px; }
 
@@ -111,6 +113,8 @@ li { margin: 5px; padding: 5px 10px; box-sizing: border-box; transition: ease .5
 .paper .logo { float: left; margin: 10px calc(25% - 12px); background-color: #EEE; border-radius: 5px; }
 
 .paper .remark { color: #aaa; }
+
+.links li { margin: 0px; background-color: transparent !important; font-size: 16px; padding: 2px 10px; }
 
 .btn-mode { position: fixed; height: 50px; width: 50px; background: #666; bottom: 100px; right: 20px; border-radius: 50px; background-position: center; background-repeat: no-repeat; background-size: 50%; box-shadow: 0px 5px 20px -3px rgba(0, 0, 0, 0.1); cursor: pointer; }
 
