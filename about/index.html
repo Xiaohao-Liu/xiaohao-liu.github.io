@@ -38,7 +38,7 @@
         <div class="img" style="background-image:url(/assets/profile5.jpeg)"></div>
         <div class="cover"  style="background-image:url(/assets/profile5.jpeg)"></div>
     </div>
-    <div class="row" style="margin:0px;"> <img style="width: calc(80% - 40px);max-width:120px;margin:auto;background-color: white;border-radius: 10px;" src="/assets/handwrite_zh.gif"></img> </div>
+    <div class="row" style="margin:0px;"> <img class="invertable" style="width: calc(80% - 40px);max-width:120px;margin:auto;border-radius: 10px;" src="/assets/handwrite_zh.gif"></img> </div>
     <div class="row name"> Xiaohao Liu </div>
    
     <div class="row dot"> </div>
@@ -54,10 +54,10 @@
     
     <div class="row line"> </div>
 
-    <div class="row email"> <div  class="logo" style="float:left;background-image:url(/assets/img/icon/email.svg)"></div>  <div>xiaohao.liu@hotmail.com</div>
+    <div class="row email"> <div  class="logo invertable" style="float:left;background-image:url(/assets/img/icon/email.svg)"></div>  <div>xiaohao.liu@hotmail.com</div>
 </div>
 
-    <div class="row github"> <div class="logo" style="float:left;background-image:url(/assets/img/icon/github.svg)"></div> <a href="https://github.com/xiaohao-liu" target="_blank">github.com/xiaohao-liu</a> </div>
+    <div class="row github"> <div class="logo invertable" style="float:left;background-image:url(/assets/img/icon/github.svg)"></div> <a href="https://github.com/xiaohao-liu" target="_blank">github.com/xiaohao-liu</a> </div>
 </div>
 
         </div>
@@ -113,15 +113,15 @@
             <li class="row">
                 <div class="col col-1-4">
                     <div class="img-board">
-                        <div class="img" style="background-image:url(/assets/img/paper/ElimRec.png)"></div>
+                        <div class="img invertable" style="background-image:url(/assets/img/paper/ElimRec.png)"></div>
                         <div class="cover"  style="background-image:url(/assets/img/paper/ElimRec.png)"></div>
                     </div>
-                    <a class="logo" href="" target="_blank"  style="background-image:url(/assets/img/icon/pdf.svg)"></a>
-                    <a class="logo" href="" target="_blank"  style="background-image:url(/assets/img/icon/code.svg)"></a>
+                    <a class="logo " href="https://dl.acm.org/doi/abs/10.1145/3503161.3548404" target="_blank"  style="background-image:url(/assets/img/icon/pdf.svg)"></a>
+                    <a class="logo invertable" href="https://github.com/Xiaohao-Liu/EliMRec" target="_blank"  style="background-image:url(/assets/img/icon/code.svg)"></a>
                 </div>
                 <div class="col col-3-4">
                     <div class="title">EliMRec: Eliminating Single-modal Bias in Multimedia Recommendation</div>
-                    <div class="author"><strong>Xiaohao Liu</strong>, Zhulin Tao, Jiahong Shao, Lifang Yang, Xianglin Huang</div>
+                    <div class="author"><strong>Xiaohao Liu</strong>, Zhulin Tao*, Jiahong Shao, Lifang Yang, Xianglin Huang</div>
                     <div class="submitted">ACM MM, June 2022</div>
                     <div class="remark">We explored single-modal bias by revealing the inner working of multi-modal fusion and achieved a generic framework EliMRec so as to eliminate single-modal bias in multimedia recommendation.
 </div>
@@ -131,11 +131,11 @@
             <li class="row">
                 <div class="col col-1-4">
                     <div class="img-board">
-                        <div class="img" style="background-image:url(/assets/img/paper/SLMRec.png)"></div>
+                        <div class="img invertable" style="background-image:url(/assets/img/paper/SLMRec.png)"></div>
                         <div class="cover"  style="background-image:url(/assets/img/paper/SLMRec.png)"></div>
                     </div>
-                    <a class="logo" href="" target="_blank"  style="background-image:url(/assets/img/icon/pdf.svg)"></a>
-                    <a class="logo" href="https://github.com/Xiaohao-Liu/SLMRec" target="_blank"  style="background-image:url(/assets/img/icon/code.svg)"></a>
+                    <a class="logo " href="https://ieeexplore.ieee.org/document/9811387" target="_blank"  style="background-image:url(/assets/img/icon/pdf.svg)"></a>
+                    <a class="logo invertable" href="https://github.com/Xiaohao-Liu/SLMRec" target="_blank"  style="background-image:url(/assets/img/icon/code.svg)"></a>
                 </div>
                 <div class="col col-3-4">
                     <div class="title">Self-supervised Learning for Multimedia Recommendation</div>
@@ -266,6 +266,18 @@
                 <div class="ins">Communication University of China</div>
             </li>    
         
+            <li>
+                <div class="date">Apr-2020</div>
+                <div class="event">Honorary Certification of National Innovation Project</div>
+                <div class="ins"></div>
+            </li>    
+        
+            <li>
+                <div class="date">Dec-2021</div>
+                <div class="event">The First Prize in China Undergraduate Mathematical Contest in Modeling(Beijing Contest District)</div>
+                <div class="ins"></div>
+            </li>    
+        
         </ul>
 </div>
 
@@ -276,10 +288,6 @@
 <div class="sec links">
     <div class="title">Useful Links</div>
     <ul>
-        
-            <li>
-                <a href="https://sep.ucas.ac.cn/" target="_blank">UCAS Information Portal</a>
-            </li>    
         
             <li>
                 <a href="https://docs.google.com/document/d/1IXF3h0RU5zz4ukmTrVKVotPQypChscNGf5k6E25HGvA/edit#heading=h.1sl0x3460m93" target="_blank">Machine Learning Reading List</a>
@@ -305,11 +313,27 @@
 
     </div>
     
-    <div class="btn-mode todark" onclick="document.getElementById('main').setAttribute('class','dark-mode')" style="background-image: url(/assets/img/icon/moon.svg);"></div>
-    <div class="btn-mode tolight" onclick="document.getElementById('main').setAttribute('class','')" style="background-image: url(/assets/img/icon/sun.svg);"></div>
+    <div class="btn-mode todark" onclick="lightOrDark()" style="background-image: url(/assets/img/icon/moon.svg);"></div>
+    <div class="btn-mode tolight" onclick="lightOrDark()" style="background-image: url(/assets/img/icon/sun.svg);"></div>
     
     <footer>
       <p style="text-align: center;">Copyright &copy; 2022 Xiao-Hao Liu</p>
     </footer>
+
+    <script>
+
+      
+      const lightOrDark = ()=>{
+        if(!isDark) document.getElementById('main').setAttribute('class','dark-mode')
+        else document.getElementById('main').setAttribute('class', '')
+
+        isDark = !isDark;
+        console.log(isDark)
+      }
+
+      var isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      if(isDark) document.getElementById('main').setAttribute('class','dark-mode')
+      else document.getElementById('main').setAttribute('class', '')
+    </script>
   </body>
 </html>
