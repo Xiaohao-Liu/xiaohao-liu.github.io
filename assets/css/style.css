@@ -40,15 +40,17 @@ span.highlight { color: #ef5350; }
 
 .img-board { width: 50px; height: 50px; margin: 5px auto; position: relative; }
 
-.img-board .img, .img-board .cover { position: absolute; width: 100%; height: 100%; background-size: cover; background-position: center; background-repeat: no-repeat; border-radius: 100px; transition: ease 0.3s; }
+.img-board .img, .img-board .img2, .img-board .cover { position: absolute; width: 100%; height: 100%; background-size: cover; background-position: center; background-repeat: no-repeat; border-radius: 100px; transition: ease 0.3s; }
 
 .img-board .img { top: 0px; left: 0px; z-index: 2; box-sizing: border-box; }
 
+.img-board .img2 { top: 0px; left: 0px; z-index: 3; box-sizing: border-box; }
+
 .img-board .cover { opacity: 0; top: 10px; left: 0px; z-index: 1; filter: blur(20px); }
 
-.img-board:hover .img { transform: scale(1.05); border: 0px; }
+.img-board:hover .img, .img-board:hover .img2 { transform: scale(1.05); border: 0px; }
 
-.img-board:hover .cover { opacity: 1; }
+.img-board:hover .cover { opacity: 1; filter: blur(30px); }
 
 .profile { font-size: 1.1rem; transition: ease .5s; background-color: white; padding: 10px; box-sizing: border-box; border-radius: 1em; box-shadow: 0px 5px 20px -3px rgba(0, 0, 0, 0.1); }
 
@@ -56,9 +58,11 @@ span.highlight { color: #ef5350; }
 
 .profile .zh_name { transition: ease .5s; }
 
-.profile .img-board { width: 150px; height: 150px; margin: 20px auto; }
+.profile .img-board { width: calc(100% - 10px); max-width: 180px; height: auto; margin-bottom: 20px; aspect-ratio: 1/1; }
 
 .profile .img-board * { border-radius: 10px; opacity: 1; border: none; }
+
+.profile .img-board .img2 { position: absolute; }
 
 .profile .name { font-weight: bold; font-size: 1.6rem; }
 
@@ -96,7 +100,7 @@ li { margin: 5px; padding: 5px 10px; box-sizing: border-box; transition: ease .5
 
 .education li .ins { font-weight: bold; font-family: serif; font-size: 1.1rem; }
 
-.education li .duration { position: absolute; top: 0px; right: 0px; color: #bbb; font-size: 0.6rem; width: 100%; text-align: center; }
+.education li .duration { margin-bottom: 5px; color: #bbb; font-size: 0.6rem; }
 
 .education li .img-board { width: 80px; height: 80px; }
 
