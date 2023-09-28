@@ -1,10 +1,6 @@
-* { margin: 0px; padding: 0px; font-family: sans; }
+* { margin: 0px; padding: 0px; font-family: -apple-system,".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif; }
 
 body { transition: ease .5s; background: #fbfbfb; }
-
-a { text-decoration: none; color: #3f51b5; }
-
-a:hover { text-decoration: underline; }
 
 footer { background: #212121; padding: 20px; color: white; font-size: 0.8rem; }
 
@@ -34,7 +30,7 @@ span.highlight { color: #ef5350; }
 
 .block .sec { height: 100%; }
 
-.block .sec .title { font-size: 1.6rem; margin: 20px 0px; font-weight: bold; font-family: sans; }
+.block .sec .title { font-size: 1.6rem; margin: 20px 0px; font-weight: bold; }
 
 .block .sec .content { text-align: justify; }
 
@@ -50,11 +46,11 @@ span.highlight { color: #ef5350; }
 
 .img-board:hover .img, .img-board:hover .img2 { transform: scale(1.05); border: 0px; }
 
-.img-board:hover .cover { opacity: 1; filter: blur(30px); }
+.img-board:hover .cover { opacity: 0.8; filter: blur(30px); }
 
-.profile { font-size: 1.1rem; transition: ease .5s; background-color: white; padding: 10px; box-sizing: border-box; border-radius: 1em; box-shadow: 0px 5px 20px -3px rgba(0, 0, 0, 0.1); }
+.profile { font-size: 1.1rem; transition: ease .5s; background-color: white; padding: 10px; box-sizing: border-box; border-radius: 1em; background-color: transparent !important; }
 
-.profile * { font-family: serif !important; }
+.profile .row { max-width: 180px; margin: auto; }
 
 .profile .zh_name { transition: ease .5s; }
 
@@ -70,15 +66,15 @@ span.highlight { color: #ef5350; }
 
 .profile .dot::before { content: ""; height: 8px; width: 8px; margin: 1px; position: absolute; background: black; border-radius: 10px; }
 
-.profile .line { position: relative; height: 1px; margin: 10px 0px; }
+.profile .item { font-size: 0.8rem; }
 
-.profile .line::before { content: ""; height: 1px; width: 100%; margin: 1px; position: absolute; top: 0px; left: 0px; background: #ddd; }
+.profile .line { height: 0px; margin: 10px auto; border-bottom: 1px solid #ddd; }
 
-.profile .email, .profile .github { font-size: 14px; line-height: 24px; display: contents; }
+.profile .email, .profile .github, .profile .location, .profile .scholar { font-size: 14px; line-height: 24px; display: flex; align-items: center; justify-content: flex-start; }
 
-.profile .email .logo, .profile .github .logo { height: 20px; width: 20px; margin: 2px; }
+.profile .email .logo, .profile .github .logo, .profile .location .logo, .profile .scholar .logo { height: 20px; width: 20px; margin: 4px; margin-right: 10px; }
 
-.logo { height: 24px; width: 24px; background-size: cover; background-position: center; background-repeat: no-repeat; display: block; margin: auto; border-radius: 5px; }
+.logo { height: 24px; width: 24px; background-color: transparent; background-size: cover; background-position: center; background-repeat: no-repeat; display: block; margin: auto; border-radius: 5px; border: none; }
 
 ul { list-style: none; }
 
@@ -100,21 +96,23 @@ li { margin: 5px; padding: 5px 10px; box-sizing: border-box; transition: ease .5
 
 .education li .ins { font-weight: bold; font-family: serif; font-size: 1.1rem; }
 
-.education li .duration { margin-bottom: 5px; color: #bbb; font-size: 0.6rem; }
+.education li .duration { margin-bottom: 10px; color: #bbb; font-size: 0.8rem; }
 
 .education li .img-board { width: 80px; height: 80px; }
 
 .education li .img-board * { background-size: contain; border-radius: 0px; border: none; }
 
-.education li .remark-b { margin-top: 5px; background-color: #fbfbfb; padding: 5px; border-radius: 5px; color: #AAA; }
+.education li .remark-b { margin-top: 5px; background-color: #fbfbfb; padding: 0px; border-radius: 5px; color: #AAA; }
 
-.paper .img-board { height: 140px; width: 100%; }
+.education li .remark-b * { margin: 5px; }
+
+.paper .img-board { height: 100px; width: 100%; }
 
 .paper .img-board * { background-size: contain; border-radius: 0px; border: none; }
 
 .paper * { font-size: 0.9rem; }
 
-.paper ul .title { font-size: 1.1rem !important; margin: 0px !important; }
+.paper ul .title { font-size: 1.1rem !important; margin: 5px 0px !important; }
 
 .paper .logo { float: left; margin: 10px calc(25% - 12px); border-radius: 5px; }
 
@@ -126,9 +124,11 @@ li { margin: 5px; padding: 5px 10px; box-sizing: border-box; transition: ease .5
 
 .btn-mode.todark { background-color: white; }
 
-strong { color: #ec407a; }
+strong { position: relative; border-bottom: 2px solid #ec407a; }
 
-a { color: #ec407a; position: relative; }
+a { color: black; position: relative; text-decoration: none; border-bottom: 1px solid #ec407a; }
+
+a:hover { color: #ec407a !important; }
 
 .tolight { display: none; }
 
