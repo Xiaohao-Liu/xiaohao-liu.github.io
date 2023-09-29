@@ -1,12 +1,12 @@
 * { margin: 0px; padding: 0px; font-family: -apple-system,".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif; }
 
-body { transition: ease .5s; background: #fbfbfb; }
+body { transition: ease .3s; background: #fbfbfb; }
 
-footer { background: #212121; padding: 20px; color: white; font-size: 0.8rem; }
+footer { background: #212121; padding: 40px; font-size: 0.8rem; color: white; }
 
 .wrapper { padding: 20px 10%; box-sizing: border-box; }
 
-.fixed-top { position: fixed; top: 20px; right: 10%; width: 20%; }
+.fixed-top { position: fixed; top: 20px; left: 10%; width: 20%; }
 
 .row { display: table; width: 100%; border-collapse: separate; border-spacing: 10px 5px; }
 
@@ -36,7 +36,7 @@ span.highlight { color: #ef5350; }
 
 .img-board { width: 50px; height: 50px; margin: 5px auto; position: relative; }
 
-.img-board .img, .img-board .img2, .img-board .cover { position: absolute; width: 100%; height: 100%; background-size: cover; background-position: center; background-repeat: no-repeat; border-radius: 100px; transition: ease 0.3s; }
+.img-board .img, .img-board .img2, .img-board .cover { position: absolute; width: 100%; height: 100%; background-size: cover; background-position: center; background-repeat: no-repeat; border-radius: 100px; transition: ease .3s; }
 
 .img-board .img { top: 0px; left: 0px; z-index: 2; box-sizing: border-box; }
 
@@ -48,15 +48,15 @@ span.highlight { color: #ef5350; }
 
 .img-board:hover .cover { opacity: 0.8; filter: blur(30px); }
 
-.profile { font-size: 1.1rem; transition: ease .5s; background-color: white; padding: 10px; box-sizing: border-box; border-radius: 1em; background-color: transparent !important; }
+.profile { font-size: 1.1rem; transition: ease .3s; background-color: white; padding: 10px; box-sizing: border-box; border-radius: 1em; background-color: transparent !important; }
 
 .profile .row { max-width: 180px; margin: auto; }
 
-.profile .zh_name { transition: ease .5s; }
+.profile .zh_name { transition: ease .3s; }
 
 .profile .img-board { width: calc(100% - 10px); max-width: 180px; height: auto; margin-bottom: 20px; aspect-ratio: 1/1; }
 
-.profile .img-board * { border-radius: 10px; opacity: 1; border: none; }
+.profile .img-board * { border-radius: 1rem; opacity: 1; border: none; }
 
 .profile .img-board .img2 { position: absolute; }
 
@@ -78,7 +78,7 @@ span.highlight { color: #ef5350; }
 
 ul { list-style: none; }
 
-li { margin: 5px; padding: 5px 10px; box-sizing: border-box; transition: ease .5s; background-color: white; border-radius: 10px; }
+li { margin: 5px; padding: 5px 10px; box-sizing: border-box; transition: ease .3s; background-color: white; border-radius: 10px; }
 
 .news li .date { float: left; font-weight: bold; }
 
@@ -88,15 +88,13 @@ li { margin: 5px; padding: 5px 10px; box-sizing: border-box; transition: ease .5
 
 .honor li .date, .honor li .event { font-weight: bold; }
 
-.honor li .ins { font-family: serif; }
-
-.education li { float: left; position: relative; width: calc(33% - 10px); padding: 5px 0px; padding-top: 10px; transition: ease .5s; }
+.education li { float: left; position: relative; width: calc(33% - 10px); padding: 5px 0px; padding-top: 10px; transition: ease .3s; }
 
 .education li * { font-size: 0.9rem; }
 
-.education li .ins { font-weight: bold; font-family: serif; font-size: 1.1rem; }
+.education li .ins { font-weight: bold; font-size: 1.1rem; }
 
-.education li .duration { margin-bottom: 10px; color: #bbb; font-size: 0.8rem; }
+.education li .duration { margin-top: 10px; color: #bbb; font-size: 0.8rem; }
 
 .education li .img-board { width: 80px; height: 80px; }
 
@@ -126,12 +124,14 @@ li { margin: 5px; padding: 5px 10px; box-sizing: border-box; transition: ease .5
 
 strong { position: relative; border-bottom: 2px solid #ec407a; }
 
-a { color: black; position: relative; text-decoration: none; border-bottom: 1px solid #ec407a; }
+a { color: black; position: relative; text-decoration: none; }
 
-a:hover { color: #ec407a !important; }
+a:hover { border-bottom: 1px solid #ec407a; color: #ec407a !important; }
 
 .tolight { display: none; }
 
 .todark { display: block; }
+
+.news li:hover, .paper li:hover, .education li:hover, .honor li:hover { transform: scale(1.02); box-shadow: 0px 10px 10px -3px rgba(0, 0, 0, 0.1); }
 
 /*# sourceMappingURL=style.css.map */
