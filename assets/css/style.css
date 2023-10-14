@@ -30,9 +30,13 @@ span.highlight { color: #ef5350; }
 
 .block .sec { height: 100%; }
 
-.block .sec .title { font-size: 1.6rem; margin: 20px 0px; font-weight: bold; }
+.block .sec .title { position: relative; font-size: 1.6rem; margin: 20px 0px; font-weight: bold; display: flex; align-items: center; }
+
+.block .sec .title .t_icon { height: 1.5rem; width: 1.5rem; position: absolute; left: -2rem; opacity: 0; transition: 0.2s ease; }
 
 .block .sec .content { text-align: justify; }
+
+.block .sec:hover .t_icon { opacity: 1; }
 
 .img-board { width: 50px; height: 50px; margin: 5px auto; position: relative; }
 
@@ -74,7 +78,9 @@ span.highlight { color: #ef5350; }
 
 .profile .email .logo, .profile .github .logo, .profile .location .logo, .profile .scholar .logo { height: 20px; width: 20px; margin: 4px; margin-right: 10px; }
 
-.logo { height: 24px; width: 24px; background-color: transparent; background-size: cover; background-position: center; background-repeat: no-repeat; display: block; margin: auto; border-radius: 5px; border: none; }
+.logo { height: 24px; width: 24px; background-color: transparent; background-size: cover; background-position: center; background-repeat: no-repeat; display: block; margin: auto; border-radius: 5px; border: none; transition: 0.2s ease; }
+
+a.logo:hover { background-color: #ec407a; border: none; filter: invert(1) hue-rotate(180deg); }
 
 ul { list-style: none; }
 
@@ -132,6 +138,6 @@ a:hover { border-bottom: 1px solid #ec407a; color: #ec407a !important; }
 
 .todark { display: block; }
 
-.news li:hover, .paper li:hover, .education li:hover, .honor li:hover { transform: scale(1.02); box-shadow: 0px 10px 10px -3px rgba(0, 0, 0, 0.1); }
+.news li:hover, .paper li:hover, .education li:hover, .honor li:hover { transform: scale(1.01); box-shadow: 0px 10px 10px -3px rgba(0, 0, 0, 0.1); }
 
 /*# sourceMappingURL=style.css.map */
