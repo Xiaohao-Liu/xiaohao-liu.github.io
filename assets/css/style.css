@@ -2,6 +2,8 @@
 
 body { transition: ease .3s; background: #fbfbfb; }
 
+header { height: 50px; }
+
 footer { background: #212121; padding: 40px; font-size: 0.8rem; color: white; }
 
 .wrapper { padding: 20px 10%; box-sizing: border-box; }
@@ -80,7 +82,7 @@ span.highlight { color: #ef5350; }
 
 .logo { height: 24px; width: 24px; background-color: transparent; background-size: cover; background-position: center; background-repeat: no-repeat; display: block; margin: auto; border-radius: 5px; border: none; transition: 0.2s ease; }
 
-a.logo:hover { background-color: #ec407a; border: none; filter: invert(1) hue-rotate(180deg); }
+a.logo:hover { background-color: #f06292; filter: invert(1) hue-rotate(180deg); }
 
 ul { list-style: none; }
 
@@ -110,15 +112,23 @@ li { margin: 5px; padding: 5px 10px; box-sizing: border-box; transition: ease .3
 
 .education li .remark-b * { margin: 5px; }
 
-.paper .img-board { height: 100px; width: 100%; }
+.paper .touch-board { position: absolute; display: none; top: 0; right: calc(100% - 5px); padding-right: 10px; width: auto; margin: 0; text-align: right; }
 
-.paper .img-board * { background-size: contain; border-radius: 0px; border: none; }
+.paper .touch-board img { height: 100px; right: 0; border-radius: 10px; box-shadow: 0px 10px 10px -3px rgba(0, 0, 0, 0.1); }
+
+.paper .touch-board .links { width: 4rem; height: 1.8rem; display: flex; float: right; }
+
+.paper .touch-board .links .logo { background-size: 80%; background-color: white; border-radius: 10px; height: 1.5rem; width: auto; aspect-ratio: 1/1; border-bottom: none !important; }
+
+.paper li:hover .touch-board { display: block; }
 
 .paper * { font-size: 0.9rem; }
 
-.paper ul .title { font-size: 1.1rem !important; margin: 5px 0px !important; }
+.paper ul .title { font-size: 1.1rem !important; margin: 5px 0px !important; line-height: 1.1rem; }
 
-.paper .logo { float: left; margin: 10px calc(25% - 12px); border-radius: 5px; }
+.paper ul li { position: relative; border-spacing: 0px; }
+
+.paper .submitted { display: flex; }
 
 .paper .remark { color: #aaa; }
 
@@ -128,16 +138,16 @@ li { margin: 5px; padding: 5px 10px; box-sizing: border-box; transition: ease .3
 
 .btn-mode.todark { background-color: white; }
 
-strong { position: relative; border-bottom: 2px solid #ec407a; }
+strong { position: relative; border-bottom: 2px solid #f06292; }
 
 a { color: black; position: relative; text-decoration: none; }
 
-a:hover { border-bottom: 1px solid #ec407a; color: #ec407a !important; }
+a:hover { border-bottom: 1px solid #f06292; color: #f06292 !important; }
 
 .tolight { display: none; }
 
 .todark { display: block; }
 
-.news li:hover, .paper li:hover, .education li:hover, .honor li:hover { transform: scale(1.01); box-shadow: 0px 10px 10px -3px rgba(0, 0, 0, 0.1); }
+.news li:hover, .paper li:hover, .education li:hover, .honor li:hover { transform: scale(1.01); box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.1); }
 
 /*# sourceMappingURL=style.css.map */
