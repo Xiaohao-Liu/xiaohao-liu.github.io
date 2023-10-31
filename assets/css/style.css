@@ -4,7 +4,7 @@ body { transition: ease .3s; background: #fbfbfb; }
 
 header { height: 50px; }
 
-footer { background: #212121; padding: 40px; font-size: 0.8rem; color: white; }
+footer { background: #212121; padding: 40px; font-size: 0.8rem; color: #888; }
 
 .wrapper { box-sizing: border-box; max-width: 925px; margin: auto; position: relative; }
 
