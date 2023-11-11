@@ -2,11 +2,11 @@
 
 body { transition: ease .3s; background: #fbfbfb; }
 
-header { height: 50px; }
+header { display: none; height: 50px; background: white; border-bottom: 2px solid #DDD; box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.2); position: sticky; top: 0px; width: 100%; z-index: 1000000; }
 
-footer { background: #212121; padding: 40px; font-size: 0.8rem; color: #888; }
+footer { padding: 40px; font-size: 0.8rem; color: black; }
 
-.wrapper { box-sizing: border-box; max-width: 925px; margin: auto; position: relative; }
+.wrapper { box-sizing: border-box; max-width: 1080px; margin: auto; position: relative; }
 
 .fixed-top { position: sticky; top: 20px; }
 
@@ -34,7 +34,7 @@ span.highlight { color: #ef5350; }
 
 .block .sec .title { position: relative; font-size: 1.6rem; margin: 20px 15px; font-weight: bold; display: flex; align-items: center; }
 
-.block .sec .title .t_icon { height: 1.5rem; width: 1.5rem; position: absolute; left: -2rem; opacity: 0; transition: 0.2s ease; }
+.block .sec .title .t_icon { height: 1.5rem; width: 1.5rem; margin-right: 10px; opacity: 1; transition: 0.2s ease; }
 
 .block .sec .content { text-align: justify; }
 
@@ -48,7 +48,7 @@ span.highlight { color: #ef5350; }
 
 .img-board .img2 { top: 0px; left: 0px; z-index: 3; box-sizing: border-box; }
 
-.img-board .cover { opacity: 0; top: 10px; left: 0px; z-index: 1; filter: blur(20px); }
+.img-board .cover { opacity: 0; top: 10px; left: 0px; z-index: 1; filter: blur(20px); transform: scale(0.9); }
 
 .img-board:hover .img, .img-board:hover .img2 { transform: scale(1.05); border: 0px; }
 
@@ -130,7 +130,7 @@ li { margin: 5px; padding: 5px 10px; box-sizing: border-box; transition: ease .3
 
 .paper .submitted { display: flex; }
 
-.paper .remark { color: #aaa; }
+.paper .remark { font-size: 0.8rem; margin: 0px 2px; font-family: 'Times New Roman'; font-style: italic; color: #aaa; }
 
 .links li, .bio li { margin: 0px; background-color: transparent !important; font-size: 16px; padding: 2px 10px; }
 
@@ -148,7 +148,9 @@ a:hover { border-bottom: 1px solid #f06292; color: #f06292 !important; }
 
 .todark { display: block; }
 
-.news li:hover, .paper li:hover, .education li:hover, .honor li:hover { transform: scale(1.01); box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.1); }
+.news li, .paper li, .education li, .honor li { border: 1px solid #EEE; }
+
+.news li:hover, .paper li:hover, .education li:hover, .honor li:hover { border: 1px solid white; transform: scale(1.01); box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.1); }
 
 .clustrmaps-map-control { display: none !important; }
 
