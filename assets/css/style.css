@@ -112,13 +112,17 @@ li { margin: 5px; padding: 5px 10px; box-sizing: border-box; transition: ease .3
 
 .education li .remark-b { margin-top: 5px; background-color: #fbfbfb; padding: 0px; border-radius: 5px; color: #AAA; }
 
-.paper .touch-board { position: absolute; display: none; top: 0; right: calc(100% - 5px); padding-right: 10px; width: auto; margin: 0; text-align: right; }
+.paper .touch-board { position: absolute; display: none; top: -5px; right: calc(100% - 5px); padding-right: 5px; width: auto; }
 
-.paper .touch-board img { height: 100px; right: 0; border-radius: 10px; box-shadow: 0px 10px 10px -3px rgba(0, 0, 0, 0.1); }
+.paper .touch-board .container { display: flex; flex-direction: column; align-items: flex-end; border-radius: 10px; right: 15px; background: #EEE; padding: 5px; position: relative; }
+
+.paper .touch-board img { height: 100px; border-radius: 10px; box-shadow: 0px 10px 10px -3px rgba(0, 0, 0, 0.1); }
 
 .paper .touch-board .links { width: 4rem; height: 1.8rem; display: flex; float: right; }
 
-.paper .touch-board .links .logo { background-size: 80%; background-color: white; border-radius: 10px; height: 1.5rem; width: auto; aspect-ratio: 1/1; border-bottom: none !important; }
+.paper .touch-board .links .logo { background-size: 80%; border-radius: 10px; height: 1.5rem; width: auto; aspect-ratio: 1/1; border-bottom: none !important; }
+
+.paper .touch-board .container::before { content: ""; display: block; position: absolute; border-top: 10px solid transparent; border-bottom: 10px solid transparent; border-left: 10px solid #EEEE; border-right: 10px solid transparent; right: -20px; top: 30px; }
 
 .paper li:hover .touch-board { display: block; }
 
