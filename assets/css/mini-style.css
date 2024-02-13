@@ -1,4 +1,0 @@
-@charset "UTF-8";
-@media screen and (max-width: 620px) { /*当屏幕尺寸小于620px时，应用下面的CSS样式*/ .profile { display: flex; } .profile .line, .profile .contact-board { display: none; } .profile .img-board { width: 60px; height: 60px; margin: 10px; } .profile .img-board * { border-radius: 100%; } .profile .name-board { text-align: left; max-width: 100%; } .profile .name-board .affiliation .item:nth-child(1) { display: none; } .wrapper { padding: 10px 10px; } .fixed-top { width: 100%; position: relative; top: 0; left: 0; } .row { box-sizing: border-box; border-spacing: 0px 0px; } .col { display: block !important; width: 100% !important; } .education li { float: none; width: 100%; } }
-
-/*# sourceMappingURL=mini-style.css.map */
