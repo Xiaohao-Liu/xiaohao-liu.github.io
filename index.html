@@ -3,6 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (() => {
+        let preference = "system";
+        try {
+          const saved = localStorage.getItem("themePreference");
+          // The previous version wrote "light" even on an untouched first visit.
+          if (saved === "dark" || saved === "light") preference = saved;
+          else if (saved === null && localStorage.getItem("theme") === "dark") preference = "dark";
+        } catch {}
+        const dark = preference === "dark" ||
+          (preference === "system" && matchMedia("(prefers-color-scheme: dark)").matches);
+        const root = document.documentElement;
+        root.dataset.themePreference = preference;
+        root.classList.add(dark ? "dark" : "light");
+        root.style.colorScheme = dark ? "dark" : "light";
+      })();
+    </script>
     <title>Liu Xiaohao's Homepage</title>
     <meta key="title" content="Liu Xiaohao's Homepage" property="og:title" />
     <meta content="Liu Xiaohao's Homepage." property="og:description" />
@@ -12,17 +29,10 @@
       content="viewport-fit=cover, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
       name="viewport"
     />
-    <script type="module" crossorigin src="/assets/index-CZzvaNrQ.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-D2LBZBfg.css">
+    <script type="module" crossorigin src="/assets/index-sPyQTVj3.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-D6UHPAS2.css">
   </head>
   <body>
-    <script>
-      // Apply the saved theme before first paint (no light flash in dark mode).
-      try {
-        var t = localStorage.getItem("theme");
-        document.documentElement.classList.add(t === "dark" ? "dark" : "light");
-      } catch (e) {}
-    </script>
     <div id="root"></div>
   </body>
 </html>
